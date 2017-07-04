@@ -1,0 +1,252 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'Alegreya';
+  src: url('Alegreya.eot'); /* IE9 Compat Modes */
+  src: url('Alegreya.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Alegreya.woff2') format('woff2'), /* Super Modern Browsers */
+       url('Alegreya.woff') format('woff'), /* Pretty Modern Browsers */
+       url('Alegreya.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Alegreya.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+	overflow: hidden;
+}
+
+/*Logotipo*/ 
+ 
+.header {  
+width: 86px;
+height: 122px;
+background-image: url("../imagens/logotipo.png");
+position: fixed;
+top: 20px;
+left: 20px;
+z-index: 2;
+
+}
+
+.header h1 {  
+display: none;
+}   
+ 
+ .mainSection{
+	height: 768px;
+	float: left;
+	width: 33%	;
+ }
+
+/*este bloco edita o texto que está por baixo do logo opinar*/ 
+#seccaoopinar h2{
+font-family: 'Alegreya', serif;
+color: #595959;
+font-size: 18px;	
+margin: 8% 20% 0% 29%;
+}
+
+/*este bloco edita o texto que está por baixo do logo ler*/ 
+#seccaoler h2{
+font-family: 'Alegreya', serif;
+color: #595959;
+font-size: 18px;	
+margin: 8% 20% 0% 25%;
+}
+
+/*este bloco edita o texto que está por baixo do logo informar*/ 
+#seccaoinformar h2{
+font-family: 'Alegreya', serif;
+color: #595959;
+font-size: 18px;	
+margin: 8% 20% 0% 20%;
+}
+
+.marginRight{
+	margin-right: 5px;
+}
+
+.visible{
+	display: block;
+}
+
+.invisible{
+	display: none;
+}
+
+
+.bullet{
+ background: url('../imagens/bullet.png') no-repeat;
+ display:inline-block;
+ vertical-align: middle;
+ height:7px;
+ width:7px; 
+ margin: 0% 1% 0% 1%;
+}
+
+
+/*Secção Pausa para Informar*/ 
+
+#seccaoinformar a {  
+width: 243px;
+height: 192px;
+background-image: url("../imagens/logotipo_pausaparainformar.png"); 
+display: block;
+text-indent: -3000px;
+margin: 83% 10% 0% 20%;
+}
+
+#seccaoinformar {  
+/*width: 449px;*/
+/*height: 768px;*/
+/*margin-right: 10px;*/
+background-image: url("../imagens/bg_01.png"); 
+background-repeat: no-repeat;
+/*float: left;*/
+}
+
+
+/*Secção Pausa para ler*/ 
+
+#seccaoler a {  
+width: 84px;
+height: 190px;
+background-image: url("../imagens/logotipo_pausaparaler.png"); 
+display: block;
+text-indent: -3000px;
+margin: 83% 40% 0% 40%;
+}
+
+#seccaoler {  
+background-image: url("../imagens/bg_02.png"); 
+background-repeat: no-repeat;
+}
+
+
+/*Secção Pausa para opinar*/ 
+
+#seccaoopinar a {  
+width: 173px;
+height: 191px;
+background-image: url("../imagens/logotipo_pausaparaopinar.png"); 
+display: block;
+text-indent: -3000px;
+margin: 83% 30% 0% 34%;
+}
+
+#seccaoopinar {  
+background-image: url("../imagens/bg_03.png"); 
+background-repeat: no-repeat;
+}
+
+
+/* Aqui começa os estilos dos contactos */ 
+
+.invisible_wraper{ 
+width: 115px;
+height: 768px;
+position: absolute;
+top: 485px; 
+float: left;
+z-index: 2;
+border-top-right-radius: 5px;
+margin: 0 1px 3px 0;
+padding: 2px 10px 2px 10px;
+}
+
+
+
+.invisible { 
+width: 30px;
+height: 30px;
+display: block;
+background:none;
+background-image: url("../imagens/plus_contact_button.png");  
+margin: 200% 0% 0% 10%;
+border:0;
+outline:none;
+}
+
+
+.visible_wraper{ 
+display: none; /* é isto que permite o efeito abrir e fechar */ 
+width: 115px;
+height: 768px;
+position: absolute;
+top: 550px; 
+float: left;
+z-index: 2;
+border-top-right-radius: 5px;
+margin: 0 1px 3px 0;
+padding: 2px 10px 2px 10px;
+background-color: #0b0b0a;
+}
+
+
+.contacts { 
+height: 768px;
+position: absolute;
+top: 10px; 
+left: 20px;
+}
+
+
+.contacts h2 {
+font-family: 'Alegreya', serif;
+color: #cecece;
+font-size: 13px;
+margin:5% 0% 2% 0%; 
+}
+
+
+/* estilo icones contactos */
+.contacts nav ul li .fb { 
+width: 12px;
+height: 21px;
+display: block;
+background-image: url("../imagens/fb_icon.png");  
+text-indent: -3000px;
+margin: 15% 0% 0% 5%;
+}
+
+.contacts nav ul li .tw { 
+width: 21px;
+height: 18px;
+display: block;
+background-image: url("../imagens/twitter_icon.png"); 
+text-indent: -3000px;
+margin: 10% 0% 0% 0%;
+}
+
+
+.contacts nav ul li .ig { 
+width: 21px;
+height: 20px;
+display: block;
+background-image: url("../imagens/ig_icon.png"); 
+text-indent: -3000px;
+margin: 10% 0% 0% 0%;
+}
+
+.contacts nav ul li .pin { 
+width: 21px;
+height: 18px;
+display: block;
+background-image: url("../imagens/pinterest-icon.png"); 
+text-indent: -3000px;
+margin: 10% 0% 10% 0%;
+}
+
+.contacts nav ul li .mail { 
+width: 21px;
+height: 15px;
+display: block;
+background-image: url("../imagens/mail_icon.png"); 
+text-indent: -3000px;
+margin: 15% 0% 0% 0%;
+}
+
+
+
+
